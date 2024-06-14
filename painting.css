@@ -1,0 +1,48 @@
+.containers{ display: grid;
+    width: 1420px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 150px 450px 50px;
+    grid-template-areas:
+    "box1 box2 box3"
+    "box4 "
+    "box5 ";
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box1{ display: flex;
+    background-color: aquamarine;
+    grid-area: "box1";
+}
+
+.box2{ display: flex;
+    background-color: aquamarine;
+    grid-area: "box2";
+}
+
+.box3{ display: flex;
+    background-color: aquamarine;
+    grid-area: "box3";
+}
+
+.box4{ display: flex;
+    background-color: aquamarine;
+    grid-area: "box4";
+    grid-column: 3 span;
+}
+
+.box5{ display: flex;
+    background-color: greenyellow;
+    grid-area: "box5";
+    grid-column: 3 span;
+}
+
+.circle{ position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    z-index: 1;
+    margin-left: 425px;
+    margin-top: 100px; 
+}
